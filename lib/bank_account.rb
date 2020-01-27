@@ -16,9 +16,9 @@ class BankAccount
     return "Your balance is $#{@balance}."
   end
   
-  def valid?
+  def valid? = true if
     @status == "open"
-    @balance < 0
+    @balance > 0
   end
 
 
