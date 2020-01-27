@@ -12,5 +12,15 @@ class BankAccount
     @balance += amt
   end
 
+  def display_balance
+    @balance
+  end
+  
+  def valid?
+    @status == "open"
+    @balance < 0
+  end
+
+
 
 end
