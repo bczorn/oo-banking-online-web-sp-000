@@ -18,9 +18,8 @@ class Transfer
     end
   end
   
-  
   def execute_transation
-    
+    if self.valid? == false
   end
   
   def reverse_transfer
